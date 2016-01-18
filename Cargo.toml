@@ -3,6 +3,7 @@ name = "sat"
 version = "0.1.0"
 authors = ["Keegan McAllister <mcallister.keegan@gmail.com>"]
 repository = "https://github.com/kmcallister/sat"
+documentation = "https://kmcallister.github.io/docs/sat/sat/index.html"
 readme = "README.md"
 license = "MIT/Apache-2.0"
 description = "Interface for defining and solving SAT problems"

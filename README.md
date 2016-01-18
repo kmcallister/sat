@@ -4,3 +4,5 @@
 
 Interface for defining and solving Boolean satisfiability (SAT) problems in
 Rust.
+
+[Documentation](https://kmcallister.github.io/docs/sat/sat/index.html)
