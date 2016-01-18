@@ -1,0 +1,7 @@
+[package]
+name = "sat"
+version = "0.1.0"
+authors = ["Keegan McAllister <mcallister.keegan@gmail.com>"]
+
+[dependencies]
+tempfile = "2"
