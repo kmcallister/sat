@@ -45,9 +45,13 @@
 //! assert!(s.solve(&i).is_none());
 //! ```
 //!
+//! For a more elaborate example, see `examples/petersen.rs` which produces a 3-coloring
+//! of the [Petersen graph][].
+//!
 //! [Boolean satisfiability]: https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
 //! [NP-complete]: https://en.wikipedia.org/wiki/NP-completeness
 //! [DPLL]: https://en.wikipedia.org/wiki/DPLL_algorithm
+//! [Petersen graph]: https://en.wikipedia.org/wiki/Petersen_graph
 
 use std::iter::IntoIterator;
 use std::ops;
