@@ -1,0 +1,13 @@
+language: rust
+install:
+  - sudo apt-get update
+  - sudo apt-get install minisat
+rust:
+  - nightly
+  - beta
+  - stable
+script:
+  - cargo build
+  - cargo doc
+  - cargo test
+after_success: curl https://raw.githubusercontent.com/kmcallister/travis-doc-upload/master/travis-doc-upload.sh | sh
