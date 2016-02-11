@@ -5,6 +5,7 @@ use {Instance, Assignment, Literal};
 use solver::Solver;
 
 use std::io::{self, Write, BufRead};
+use std::fs;
 use std::process::Command;
 use std::str::FromStr;
 
@@ -119,7 +120,7 @@ impl<CmdFactory> Solver for Dimacs<CmdFactory>
            .arg(out_file.path())
            .spawn().unwrap().wait();
 
-        let out_file = out_file.reopen().unwrap();
+        let out_file: fs::File = out_file.into();
         let mut out_file = io::BufReader::new(out_file);
 
         self.read_solution(&mut out_file, instance.num_vars)

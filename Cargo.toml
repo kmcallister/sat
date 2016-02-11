@@ -9,4 +9,4 @@ license = "MIT/Apache-2.0"
 description = "Interface for defining and solving SAT problems"
 
 [dependencies]
-tempfile = "2"
+tempfile = "2.1"
