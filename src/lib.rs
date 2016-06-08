@@ -61,6 +61,7 @@ extern crate tempfile;
 pub mod solver;
 
 /// An instance of the SAT problem.
+#[derive(Debug)]
 pub struct Instance {
     num_vars: usize,
     cnf_clauses: Vec<Vec<Literal>>,
@@ -69,7 +70,7 @@ pub struct Instance {
 /// A literal; a variable or negated variable.
 ///
 /// Literals support the `!` (negation) operator.
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Debug)]
 pub struct Literal {
     var: usize,
     negated: bool,
@@ -78,6 +79,7 @@ pub struct Literal {
 /// An assignment of truth values to variables.
 ///
 /// This is the output of a successful solve.
+#[derive(Debug)]
 pub struct Assignment {
     assignment: Vec<Literal>,
 }
