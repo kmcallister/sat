@@ -70,7 +70,7 @@ pub struct Instance {
 /// A literal; a variable or negated variable.
 ///
 /// Literals support the `!` (negation) operator.
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct Literal {
     var: usize,
     negated: bool,
